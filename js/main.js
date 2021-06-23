@@ -92,14 +92,14 @@ let setElement = (elName, elClass, elCont) => {
 
 // Show full title
 
-let groupNameBlocksArr = [...document.querySelectorAll(".table__col.group__name, .title__block")];
+// let groupNameBlocksArr = [...document.querySelectorAll(".table__col.group__name, .title__block")];
 
-groupNameBlocksArr.forEach((block) => {
-  let infoBlock = block.querySelector(".group__info__block");
-  let title = block.querySelector(".group__name").innerText;
-  let fullTitle = setElement("p", "full__group__name", title);
-  infoBlock.appendChild(fullTitle);
-});
+// groupNameBlocksArr.forEach((block) => {
+//   let infoBlock = block.querySelector(".group__info__block");
+//   let title = block.querySelector(".group__name").innerText;
+//   let fullTitle = setElement("p", "full__group__name", title);
+//   infoBlock.appendChild(fullTitle);
+// });
 
 // let showFullTitle = () => {
 // 	groupNameBlocksArr.forEach(block => {
