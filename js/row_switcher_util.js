@@ -1,4 +1,7 @@
-const rowWrappers = [...document.querySelectorAll(".table__row__wrapper")];
+const rowWrappers = [
+  ...document.querySelectorAll(".table__row__wrapper"),
+  ...document.querySelectorAll(".mobile__table__row"),
+];
 
 rowWrappers.forEach((wrapper) => {
   let switchBtn = wrapper.querySelector(".plus__btn");

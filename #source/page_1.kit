@@ -16,7 +16,7 @@
       <main class="main">
         <!-- @import "./navbar.html" -->
         <div class="pages__content__wrap">
-          <h1 class="pages__title">דוחות ניוזלטר</h1>
+          <h1 class="pages__title">דוח שליחה ישירה</h1>
           <div class="content__wrap__navbar">
             <div class="tabs__switch__block">
               <div class="content__tab active">
@@ -29,38 +29,46 @@
               ייצא קובץ
             </button>
           </div>
-          <div class="search__block under__tabs">
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="מאת מייל" />
-            </form>
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="למייל" />
-            </form>
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="נמען" />
-            </form>
-            <form action="" class="search__form">
-              <input type="date" placeholder="מתאריך     " id="from" class="date__input" />
-            </form>
-            <form action="" class="search__form">
-              <input type="date" placeholder="עד תאריך     " id="to" class="date__input" />
-            </form>
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="מזהה חיצוני" />
-            </form>
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="נושא" />
-            </form>
-            <form action="" class="search__form">
-              <input type="text" class="search__input" placeholder="סטטוס" />
-            </form>
-            <button class="search__btn">
-              <span>חיפוש</span>
-              <img src="imgs/pages/search_1.svg" alt="" />
-            </button>
-            <button class="clean__btn">נקה</button>
-          </div>
           <div class="main__content__wrap active" id="first">
+            <div class="search__block under__tabs">
+              <div class="search__block__wrap">
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="מאת מייל" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="למייל" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="נמען" />
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="מתאריך" id="from" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="עד תאריך" id="to" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="מזהה חיצוני" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="נושא" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="סטטוס" />
+                </form>
+              </div>
+              <button class="search__btn">
+                <span>חיפוש</span>
+                <img src="imgs/pages/search_1.svg" alt="" />
+              </button>
+              <button class="clean__btn">נקה</button>
+            </div>
             <div class="main__content__header">
               <div class="header__block">
                 <span class="header__title">סך הכל הודעות שנשלחו</span>
@@ -663,6 +671,60 @@
                   </div>
                 </div>
               </div>
+              <div class="mobile__table__row">
+                <div class="title__block">
+                  <div class="group__info__block">
+                    <p class="group__name">תאריך שליחה</p>
+                  </div>
+                  <div class="value__block">
+                    <p class="value">16.10.2020</p>
+                    <p class="value">20:00</p>
+                  </div>
+                </div>
+                <div class="emails">
+                  <h3 class="col__title">מאת מייל</h3>
+                  <div class="values">
+                    <div class="value__block">
+                      <p class="value">postmaster@pulseem.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="emails">
+                  <h3 class="col__title">למייל</h3>
+                  <div class="values">
+                    <div class="value__block">
+                      <p class="value">testbymoran@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="title__block">
+                  <div class="group__info__block">
+                    <p class="group__name">תאריך שליחה</p>
+                  </div>
+                  <div class="value__block">
+                    <p class="value">16.10.2020</p>
+                    <p class="value">20:00</p>
+                  </div>
+                </div>
+                <div class="emails">
+                  <h3 class="col__title">מאת מייל</h3>
+                  <div class="values">
+                    <div class="value__block">
+                      <p class="value">postmaster@pulseem.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="emails">
+                  <h3 class="col__title">למייל</h3>
+                  <div class="values">
+                    <div class="value__block">
+                      <p class="value">testbymoran@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="pages__footer">
               <div class="left__side">
@@ -687,6 +749,50 @@
             </div>
           </div>
           <div class="main__content__wrap" id="second">
+            <div class="search__block under__tabs">
+              <div class="search__block__wrap">
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="מאת מספר" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="לטלפון" />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="תוכן המסרון" />
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="מתאריך" id="from_1" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="עד תאריך" id="to_1" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="נמען" />
+                </form>
+                <form action="" class="search__form">
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="
+מזהה חיצוני"
+                  />
+                </form>
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="סטטוס" />
+                </form>
+              </div>
+              <button class="search__btn">
+                <span>חיפוש</span>
+                <img src="imgs/pages/search_1.svg" alt="" />
+              </button>
+              <button class="clean__btn">נקה</button>
+            </div>
             <p class="table__legend">סה"כ 100,000 הודעות</p>
             <div class="table__wrap">
               <div class="table__row__wrapper">
@@ -697,7 +803,7 @@
                     <span class="subtitle">לטלפון</span>
                     <span class="subtitle">סטטוס</span>
                   </h3>
-                  <h3 class="table__col__title">סטטוס</h3>
+                  <h3 class="table__col__title">תוכן המסרון</h3>
                   <h3 class="table__col__title multititle">
                     <span class="subtitle">שגיאה</span>
                     <span class="subtitle">מזהה</span>
@@ -1039,144 +1145,261 @@
             </div>
             <div class="mobile__table__wrap">
               <div class="mobile__table__row">
-                <div class="title__block">
-                  <div class="group__info__block">
-                    <p class="group__name">תאריך שליחה</p>
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="value__block">
-                    <p class="value">16.10.2020</p>
-                    <p class="value">20:00</p>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
                   </div>
                 </div>
-                <div class="emails">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">Gett</p>
-                      <p class="value__title">מאת מספר</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">972507234557</p>
-                      <p class="value__title">לטלפון</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">נשלח בהצלחה</p>
-                      <p class="value__title">סטטוס</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="messages">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">1,897</p>
-                      <p class="value__title">הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">462</p>
-                      <p class="value__title">ייחודיות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
-                  </div>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
                 </div>
               </div>
               <div class="mobile__table__row">
-                <div class="title__block">
-                  <div class="group__info__block">
-                    <p class="group__name">תאריך שליחה</p>
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="value__block">
-                    <p class="value">16.10.2020</p>
-                    <p class="value">20:00</p>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
                   </div>
                 </div>
-                <div class="emails">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">Gett</p>
-                      <p class="value__title">מאת מספר</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">972507234557</p>
-                      <p class="value__title">לטלפון</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">נשלח בהצלחה</p>
-                      <p class="value__title">סטטוס</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="messages">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">1,897</p>
-                      <p class="value__title">הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">462</p>
-                      <p class="value__title">ייחודיות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
-                  </div>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
                 </div>
               </div>
               <div class="mobile__table__row">
-                <div class="title__block">
-                  <div class="group__info__block">
-                    <p class="group__name">תאריך שליחה</p>
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="value__block">
-                    <p class="value">16.10.2020</p>
-                    <p class="value">20:00</p>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
                   </div>
                 </div>
-                <div class="emails">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">Gett</p>
-                      <p class="value__title">מאת מספר</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">972507234557</p>
-                      <p class="value__title">לטלפון</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__2">
-                      <p class="value">נשלח בהצלחה</p>
-                      <p class="value__title">סטטוס</p>
-                    </a>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
                   </div>
                 </div>
-                <div class="messages">
-                  <div class="values block">
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">1,897</p>
-                      <p class="value__title">הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">462</p>
-                      <p class="value__title">ייחודיות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
-                    <a href="#" class="value__block underlined type__1">
-                      <p class="value">12%</p>
-                      <p class="value__title">אחוז הקלקות</p>
-                    </a>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
                   </div>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <div class="group__info__block">
+                        <p class="group__name">תאריך שליחה</p>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <div class="values block">
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">מאת מספר</p>
+                          <p class="value">Gett</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">לטלפון</p>
+                          <p class="value">972507234557</p>
+                        </a>
+                        <a href="#" class="value__block underlined">
+                          <p class="value__title">סטטוס</p>
+                          <p class="value">נשלח בהצלחה</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="value__block">
+                      <p class="value">16.10.2020</p>
+                      <p class="value">20:00</p>
+                    </div>
+                    <button class="plus__btn">
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="content disaled">
+                  <p class="content__text">
+                    איזה יופי הרכב שלך נראה כשהוא ממותג בצורה מלאה! התמונה נבדקה ואושרה ואתה ממשיך
+                    בפלטינום פלוס גם בחודש הבא! מדי חודש נזכיר לך להעלות תמונה חדשה שמחים שאתה איתנו
+                    ומאחלים לך בריאות איתנה, Gett
+                  </p>
                 </div>
               </div>
             </div>

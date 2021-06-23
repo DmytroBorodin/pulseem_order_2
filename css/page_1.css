@@ -264,6 +264,12 @@ a.value__block.underlined .value,
 a.value__block.underlined .value__title {
   text-decoration: underline;
   color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+a.value__block.underlined .value {
+  text-decoration: none;
+  margin-bottom: 0;
 }
 
 a.value__block.underlined.type__1 .value,
@@ -339,6 +345,9 @@ a.value__block.underlined.type__3 .value__title {
 }
 
 @media screen and (max-width: 1100px) {
+  .main__content__wrap#second .emails {
+    margin-bottom: 0;
+  }
   .mobile__table__row .value__block {
     margin-right: 0;
     margin-left: 0;
@@ -353,18 +362,22 @@ a.value__block.underlined.type__3 .value__title {
 }
 
 @media screen and (max-width: 850px) {
-  .search__block {
-    display: none;
-  }
-  .pages__buttons__block .serach__form {
-    display: block;
-  }
   .main__content__header {
     display: none;
   }
   .content__tab {
     margin-left: 0;
     margin-right: 3rem;
+  }
+  .main__content__wrap#second .table__legend {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__content__wrap#second .emails .value__title,
+  .main__content__wrap#second .emails .value {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=page_1.css.map */
