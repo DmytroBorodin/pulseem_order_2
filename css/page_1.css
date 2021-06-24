@@ -347,6 +347,12 @@ a.value__block.underlined.type__3 .value__title {
   .plus__btn {
     margin-bottom: 1rem;
   }
+  .mobile__table__title {
+    font-size: 1.8rem;
+    line-height: 1.33;
+    font-weight: 700;
+    color: #333;
+  }
   .mobile__date {
     text-align: center;
     font-size: 1.6rem;
