@@ -57,6 +57,10 @@
   .search__btn {
     padding: 0.6rem 2.1rem 0.4rem 0.9rem;
   }
+  .clean__btn {
+    margin-left: 0;
+    margin-right: 1.2rem;
+  }
   .table__col {
     border-left: 1px solid #797979;
     border-right: none;
@@ -134,6 +138,13 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .wrap.rtl {
+    .clean__btn {
+      margin: 0.5rem 0 0 0;
+    }
+  }
+}
 @media screen and (max-width: 576px) {
   .wrap.rtl {
     .left__side,
@@ -293,10 +304,9 @@
   .checkbox__title {
     margin: 0 0.5rem;
   }
-  #search__checkbox {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
+}
+.buttons__container {
+  display: flex;
 }
 .search__btn {
   width: 10.1rem;
@@ -313,6 +323,18 @@
   border-radius: 0.6rem;
   img {
     width: 1.6rem;
+  }
+}
+.clean__btn {
+  display: none;
+  width: 5rem;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #333;
+  border-bottom: 1px solid #333;
+  margin-left: 1.2rem;
+  &.active {
+    display: block;
   }
 }
 
@@ -913,6 +935,12 @@ p.full__group__name.active {
       display: block;
     }
   }
+  .buttons__container {
+    flex-direction: column;
+  }
+  .clean__btn {
+    margin: 0.5rem 0 0 0;
+  }
   .pages__buttons__block {
     padding: 0 0 1.3rem;
     .serach__form {
@@ -928,6 +956,9 @@ p.full__group__name.active {
   .serach__form {
     min-width: 23.5rem;
     width: 40.86%;
+  }
+  .option {
+    padding: 0 0.5rem;
   }
 }
 @media screen and (max-width: 576px) {

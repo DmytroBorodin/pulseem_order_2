@@ -1,10 +1,6 @@
 /* RTL */
 
 .wrap.rtl {
-  .clean__btn {
-    margin-left: 0;
-    margin-right: 1.2rem;
-  }
   .main__content__wrap#second {
     .table__col.col__4 {
       .tool__tip__arrow {
@@ -65,17 +61,6 @@
   padding: 2.6rem 0 1.3rem;
   .serach__form {
     display: none;
-  }
-}
-.clean__btn {
-  display: none;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  color: #333;
-  border-bottom: 1px solid #333;
-  margin-left: 1.2rem;
-  &.active {
-    display: block;
   }
 }
 
@@ -302,7 +287,10 @@ a.value__block.underlined {
 @media screen and (max-width: 1100px) {
   .main__content__wrap#second {
     .emails {
-      margin-bottom: 0;
+      margin-bottom: 9%;
+    }
+    .col__title {
+      margin-bottom: 4%;
     }
   }
   .mobile__table__row {
@@ -318,6 +306,15 @@ a.value__block.underlined {
   a.value__block.underlined {
     width: auto;
   }
+  .plus__btn {
+    margin-bottom: 1rem;
+  }
+  .mobile__date {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+  }
 }
 @media screen and (max-width: 850px) {
   .main__content__header {
@@ -330,16 +327,6 @@ a.value__block.underlined {
   .main__content__wrap#second {
     .table__legend {
       margin-top: 2.5rem;
-    }
-  }
-}
-@media screen and (max-width: 450px) {
-  .main__content__wrap#second {
-    .emails {
-      .value__title,
-      .value {
-        font-size: 1.1rem;
-      }
     }
   }
 }

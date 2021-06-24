@@ -685,21 +685,20 @@ button.faq {
 }
 @media screen and (max-width: 574px) {
   .languages {
-    width: 45px;
+    width: 50px;
     padding-right: 7px;
     padding-left: 3px;
   }
   .select__arrow {
-    right: 7px;
+    right: 6px;
   }
   .wrap.rtl {
     .languages {
-      width: 45px;
       padding-left: 7px;
       padding-right: 3px;
     }
     .select__arrow {
-      right: 28px;
+      right: 33px;
     }
   }
 }

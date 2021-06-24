@@ -11,8 +11,4 @@ datapickersArr.forEach((elem) => {
     picker.classList.add("active");
     picker.setAttribute("type", "date");
   });
-  picker.addEventListener("blur", () => {
-    picker.setAttribute("type", "text");
-    img.style.display = "block";
-  });
 });
