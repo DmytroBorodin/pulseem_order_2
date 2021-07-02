@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>דוחות סמס</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/sms_reports.css" />
+    <link rel="author" href="humans.txt" />
+  </head>
+  <body>
+    <div class="wrap rtl" id="sms_reports">
+      <!-- @import "./sidebar.html" -->
+      <main class="main">
+        <!-- @import "./navbar.html" -->
+        <div class="pages__content__wrap">
+          <h1 class="pages__title">דוחות סמס</h1>
+          <div class="main__content__wrap active">
+            <div class="search__block">
+              <div class="search__block__wrap">
+                <form action="" class="search__form">
+                  <input type="text" class="search__input" placeholder="שם קמפיין" />
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="מתאריך" id="from" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form mobile__true">
+                  <div class="date__input__wrapper">
+                    <img src="imgs/pages/calendar.svg" alt="" />
+                    <input type="text" placeholder="עד תאריך" id="to" class="date__input" />
+                  </div>
+                </form>
+                <form action="" class="search__form checkbox">
+                  <input type="checkbox" class="search__checkbox" checked id="send_exp" />
+                  <label for="send_exp">שליחת ניסיון</label>
+                </form>
+              </div>
+              <div class="buttons__container">
+                <button class="search__btn">
+                  <span>חיפוש</span>
+                  <img src="imgs/pages/search_1.svg" alt="" />
+                </button>
+                <button class="clean__btn">נקה</button>
+              </div>
+            </div>
+            <div class="buttons__block">
+              <button class="page__btn type__3">Some text</button>
+              <button class="page__btn type__4">
+                <img src="imgs/pages/export.svg" alt="" />
+                ייצא קובץ
+              </button>
+            </div>
+            <div class="table__wrap">
+              <div class="table__row__wrapper">
+                <div class="table__header__row table__row">
+                  <h3 class="table__col__title">שם קמפיין</h3>
+                  <h3 class="table__col__title multititle tripple">
+                    <span class="subtitle">תאריך</span>
+                    <span class="subtitle">לשליחה</span>
+                    <span class="subtitle">נשלחו</span>
+                  </h3>
+                  <h3 class="table__col__title">הקלקות</h3>
+                  <h3 class="table__col__title">הסרות</h3>
+                  <h3 class="table__col__title">קרדיטים</h3>
+                  <h3 class="table__col__title">DLR</h3>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name">לקוחות פעילים</a>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name">נוטשים 21 יום</a>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name">לקוחות פעילים</a>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name"
+                      >ניסיון 2 - דיוור דוג' כרמלה</a
+                    >
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name"
+                      >ניסיון 2 - דיוור דוג' כרמלה</a
+                    >
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <a href="sms_reports_tabs.html" class="group__name">נוטשים 21 יום</a>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <div class="values">
+                      <div class="value__block">
+                        <p class="value">16.10.2020</p>
+                        <p class="value">20:00</p>
+                      </div>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">סה"כ</p>
+                      </a>
+                      <a href="#" class="value__block">
+                        <p class="value">27,311</p>
+                        <p class="value">נשלחו</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="table__col multicol tripple">
+                    <a href="#" class="value__block blue">
+                      <p class="value">1,897</p>
+                      <p class="value">הקלקות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">462</p>
+                      <p class="value">ייחודיות</p>
+                    </a>
+                    <a href="#" class="value__block blue">
+                      <p class="value">12%</p>
+                      <p class="value">אחוז הקלקות</p>
+                    </a>
+                  </div>
+                  <div class="table__col">
+                    <a href="#" class="value__block red width__100">
+                      <p class="value">12</p>
+                      <p class="value">הסרות</p>
+                    </a>
+                  </div>
+                  <div class="table__col multicol twice">
+                    <div class="value__block blue">
+                      <p class="value">2</p>
+                      <p class="value">קרדיטים להודעה</p>
+                    </div>
+                    <div class="value__block blue">
+                      <p class="value">8</p>
+                      <p class="value">קרדיטים לחיוב</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">27,311</p>
+                      <p class="value">סה"כ</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile__table__wrap">
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="title__block">
+                      <p class="mobile__table__title">לקוחות פעילים</p>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">הקלקות</h3>
+                      <div class="values">
+                        <a href="#" class="value__block blue">
+                          <p class="value">1,897</p>
+                          <p class="value">הקלקות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">462</p>
+                          <p class="value">ייחודיות</p>
+                        </a>
+                        <a href="#" class="value__block blue">
+                          <p class="value">12%</p>
+                          <p class="value">אחוז הקלקות</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">קרדיטים</h3>
+                      <div class="values">
+                        <div class="value__block blue">
+                          <p class="value">2</p>
+                          <p class="value">קרדיטים להודעה</p>
+                        </div>
+                        <div class="value__block blue">
+                          <p class="value">8</p>
+                          <p class="value">קרדיטים לחיוב</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">16.10.2020</p>
+                      <p class="mobile__date">20:00</p>
+                    </div>
+                    <div class="value__block width__100">
+                      <img src="imgs/pages/row_ic_6(1).png" alt="" />
+                      <p class="value">דוחות</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pages__footer">
+              <div class="left__side">
+                <span>מספר שורות:</span>
+                <div class="change__quantity">
+                  <select class="quantity" name="" id="">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                  </select>
+                  <img src="imgs/pages/arrow.svg" alt="" class="select__quantity__arrow" />
+                </div>
+              </div>
+              <div class="right__side">
+                <span>דף</span>
+                <input type="text" placeholder="1" class="page__num__btn" />
+                <span>מתוך 66</span>
+                <a href="#">
+                  <img src="imgs/pages/page_arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      let cleanBtns = [...document.querySelectorAll(".clean__btn")];
+      let searchBtns = [...document.querySelectorAll(".search__btn")];
+      let datePickers = [...document.querySelectorAll(".date__input")];
+      searchBtns.forEach((searchBtn) => {
+        let index = searchBtns.indexOf(searchBtn);
+        searchBtn.addEventListener("click", () => {
+          cleanBtns[index].classList.add("active");
+        });
+
+        cleanBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            datePickers.forEach((picker) => {
+              picker.value = "";
+            });
+          });
+        });
+      });
+    </script>
+    <script src="js/tab_switcher_util.js"></script>
+    <script src="js/row_switcher_util.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
