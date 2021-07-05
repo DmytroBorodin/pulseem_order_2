@@ -1,6 +1,6 @@
 let smsReportsChart = am4core.create("sms_reports_chart", am4charts.XYChart);
 smsReportsChart.paddingBottom = 0;
-
+smsReportsChart.rtl = true;
 smsReportsChart.data = [
   {
     xData: "נשלחו",
@@ -39,7 +39,6 @@ valueAxis.renderer.labels.template.fontSize = 16;
 valueAxis.numberFormatter = new am4core.NumberFormatter();
 valueAxis.numberFormatter.numberFormat = "#.000";
 valueAxis.adjustLabelPrecision = false;
-valueAxis.renderer.labels.template.dx = 25;
 
 // Create series
 let series = smsReportsChart.series.push(new am4charts.ColumnSeries());

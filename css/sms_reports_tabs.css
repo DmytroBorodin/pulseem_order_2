@@ -24,6 +24,25 @@
   }
 }
 
+.wrap#sms_reports_tabs .pages__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap#sms_reports_tabs .back__btn {
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 .wrap#sms_reports_tabs #data_content {
   margin-top: 1.5rem;
   background-color: #e3e9f0;
@@ -190,7 +209,7 @@
   max-width: 10rem;
   width: auto;
   min-width: auto;
-  margin: 0 0 0 1.2rem;
+  margin: 0 1.2rem 0;
 }
 
 .wrap#sms_reports_tabs #table_content .value__block.width__100px:last-child {
@@ -279,6 +298,15 @@
 }
 
 @media screen and (max-width: 850px) {
+  .wrap#sms_reports_tabs .pages__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .wrap#sms_reports_tabs #table_content .buttons__block .buttons__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

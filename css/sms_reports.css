@@ -32,13 +32,26 @@
 }
 
 .wrap#sms_reports .buttons__block {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 1.5rem;
 }
 
+.wrap#sms_reports .buttons__block .buttons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .wrap#sms_reports .table__row {
+  padding: 2.3rem 0;
   -ms-grid-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr 1.42fr;
       grid-template-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr 1.42fr;
 }
@@ -124,6 +137,12 @@
 @media screen and (max-width: 850px) {
   .wrap#sms_reports .value {
     font-size: 1.4rem;
+  }
+  .wrap#sms_reports .search__form.checkbox {
+    display: none;
+  }
+  .wrap#sms_reports .main__content__wrap .buttons__block .buttons__container {
+    display: none;
   }
 }
 /*# sourceMappingURL=sms_reports.css.map */

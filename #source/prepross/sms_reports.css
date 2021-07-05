@@ -22,10 +22,16 @@
   margin-left: 0.5rem;
 }
 .wrap#sms_reports .buttons__block {
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 1.5rem;
 }
+.wrap#sms_reports .buttons__block .buttons__container {
+  display: flex;
+  align-items: center;
+}
 .wrap#sms_reports .table__row {
+  padding: 2.3rem 0;
   grid-template-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr 1.42fr;
 }
 .wrap#sms_reports .group__name {
@@ -92,5 +98,11 @@
 @media screen and (max-width: 850px) {
   .wrap#sms_reports .value {
     font-size: 1.4rem;
+  }
+  .wrap#sms_reports .search__form.checkbox {
+    display: none;
+  }
+  .wrap#sms_reports .main__content__wrap .buttons__block .buttons__container {
+    display: none;
   }
 }

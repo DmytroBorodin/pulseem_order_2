@@ -250,21 +250,35 @@
           <div class="main__content__wrap active">
             <div class="search__block">
               <div class="search__block__wrap">
-                <form action="" class="search__form">
+                <form action="" class="search__form mobile__true">
                   <input type="text" class="search__input" placeholder="שם קמפיין" />
                 </form>
-                <form action="" class="search__form mobile__true">
-                  <div class="date__input__wrapper">
-                    <img src="imgs/pages/calendar.svg" alt="" />
-                    <input type="text" placeholder="מתאריך" id="from" class="date__input" />
-                  </div>
-                </form>
-                <form action="" class="search__form mobile__true">
-                  <div class="date__input__wrapper">
-                    <img src="imgs/pages/calendar.svg" alt="" />
-                    <input type="text" placeholder="עד תאריך" id="to" class="date__input" />
-                  </div>
-                </form>
+                <div class="wk__date__block">
+                  <form action="" class="search__form">
+                    <div class="date__input__wrapper">
+                      <input type="date" placeholder="מתאריך" id="from" class="date__input" />
+                    </div>
+                  </form>
+                  <form action="" class="search__form">
+                    <div class="date__input__wrapper">
+                      <input type="date" placeholder="עד תאריך" id="to" class="date__input" />
+                    </div>
+                  </form>
+                </div>
+                <div class="ff__date__block">
+                  <form action="" class="search__form">
+                    <div class="date__input__wrapper">
+                      <img src="imgs/pages/calendar.svg" alt="" />
+                      <input type="text" placeholder="מתאריך" id="from_1" class="date__input" />
+                    </div>
+                  </form>
+                  <form action="" class="search__form">
+                    <div class="date__input__wrapper">
+                      <img src="imgs/pages/calendar.svg" alt="" />
+                      <input type="text" placeholder="עד תאריך" id="to_1" class="date__input" />
+                    </div>
+                  </form>
+                </div>
                 <form action="" class="search__form checkbox">
                   <input type="checkbox" class="search__checkbox" checked id="send_exp" />
                   <label for="send_exp">שליחת ניסיון</label>
@@ -279,11 +293,14 @@
               </div>
             </div>
             <div class="buttons__block">
-              <button class="page__btn type__3">Some text</button>
-              <button class="page__btn type__4">
-                <img src="imgs/pages/export.svg" alt="" />
-                ייצא קובץ
-              </button>
+              <div class="buttons__container">
+                <button class="page__btn type__3">Campaign Comparison</button>
+                <button class="page__btn type__4">
+                  <img src="imgs/pages/export.svg" alt="" />
+                  ייצא קובץ
+                </button>
+              </div>
+              <p class="pages__text"><span>קמפיינים</span> <span class="counter">45</span></p>
             </div>
             <div class="table__wrap">
               <div class="table__row__wrapper">
@@ -705,18 +722,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -754,18 +771,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -803,18 +820,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -852,18 +869,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -901,18 +918,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -950,18 +967,18 @@
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
                       <div class="values">
-                        <a href="#" class="value__block blue">
+                        <div class="value__block">
                           <p class="value">1,897</p>
                           <p class="value">הקלקות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block blue">
                           <p class="value">462</p>
                           <p class="value">ייחודיות</p>
-                        </a>
-                        <a href="#" class="value__block blue">
+                        </div>
+                        <div class="value__block">
                           <p class="value">12%</p>
                           <p class="value">אחוז הקלקות</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <div class="emails">
@@ -1019,7 +1036,7 @@
     <script>
       let cleanBtns = [...document.querySelectorAll(".clean__btn")];
       let searchBtns = [...document.querySelectorAll(".search__btn")];
-      let datePickers = [...document.querySelectorAll(".date__input")];
+      let datePickers = [...document.querySelectorAll(".date__input__wrapper")];
       searchBtns.forEach((searchBtn) => {
         let index = searchBtns.indexOf(searchBtn);
         searchBtn.addEventListener("click", () => {
@@ -1028,13 +1045,23 @@
 
         cleanBtns.forEach((btn) => {
           btn.addEventListener("click", () => {
-            datePickers.forEach((picker) => {
+            datePickers.forEach((elem) => {
+              let picker = elem.querySelector(".date__input");
               picker.value = "";
+              picker.classList.remove("focused");
+              if (navigator.userAgent.indexOf("Firefox") !== -1) {
+                let img = elem.querySelector("img");
+                if (img) {
+                  img.style.display = "block";
+                }
+                picker.setAttribute("type", "text");
+              }
             });
           });
         });
       });
     </script>
+    <script src="js/pagination.js"></script>
     <script src="js/tab_switcher_util.js"></script>
     <script src="js/row_switcher_util.js"></script>
     <script src="js/datepicker.js"></script>

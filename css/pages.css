@@ -54,6 +54,10 @@
   text-align: right;
 }
 
+.wrap.rtl .date__input::after {
+  text-align: right;
+}
+
 .wrap.rtl .search__form,
 .wrap.rtl .send__method__select {
   margin: 0.5rem 0 0.5rem 1.3rem;
@@ -231,22 +235,32 @@
   cursor: pointer;
 }
 
-.content__tab.active .tab__name {
-  border-bottom: 0.4rem solid #0371ad;
+.content__tab.active .tab__name:after {
+  background-color: #0371ad;
 }
 
 .tab__name {
+  position: relative;
   padding: 0 0.9rem 0.4rem;
   font-size: 1.8rem;
   line-height: 1.3333;
   font-weight: 700;
   color: #555555;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
-.tab__name:hover {
-  border-bottom: 0.4rem solid #0371ad;
+.tab__name:hover:after {
+  background-color: #0371ad;
+}
+
+.tab__name:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0.4rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* Search Block */
@@ -322,27 +336,36 @@
 .date__input__wrapper {
   position: relative;
   height: 100%;
+  cursor: pointer;
 }
 
-.date__input__wrapper img {
-  position: absolute;
-  top: 50%;
-  left: 14.2rem;
-  width: 1.3rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 10;
+.date__input {
   cursor: pointer;
+}
+
+.date__input::-webkit-datetime-edit-fields-wrapper::-webkit-datetime-edit-month-field, .date__input::-webkit-datetime-edit-fields-wrapper::-webkit-datetime-edit-day-field, .date__input::-webkit-datetime-edit-fields-wrapper::-webkit-datetime-edit-year-field {
+  font-family: "Assistant";
+}
+
+.date__input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 .date__input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: -1.42rem;
+  width: 1.3rem;
+  height: 1.4rem;
+  z-index: 5;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url("../imgs/pages/calendar.svg");
 }
 
 .date__input::-webkit-input-placeholder {
@@ -367,6 +390,53 @@
   line-height: 3.2rem;
   color: #797979;
   font-family: "Assistant";
+}
+
+.date__input::after {
+  position: absolute;
+  content: attr(placeholder);
+  width: calc(100% - 2.3rem);
+}
+
+.date__input.focused:after {
+  display: none;
+}
+
+.date__input.focused::-webkit-datetime-edit-fields-wrapper {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.date__input::-webkit-datetime-edit-fields-wrapper {
+  width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.wk__date__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ff__date__block {
+  display: none;
+}
+
+.ff__date__block .date__input__wrapper img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 14.2rem;
+  width: 1.3rem;
+  height: 1.4rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ff__date__block .date__input::-webkit-clear-button {
+  display: none;
 }
 
 .serch__checkbox {
@@ -1033,6 +1103,12 @@ p.full__group__name.active {
   text-align: center;
 }
 
+.pages__text {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #333;
+}
+
 .custom__select__block {
   position: relative;
 }
@@ -1146,7 +1222,7 @@ p.full__group__name.active {
             align-items: flex-start;
   }
   .search__block__wrap {
-    max-width: 71.2rem;
+    max-width: 90rem;
   }
   .search__btn {
     margin-top: 0.5rem;
@@ -1191,6 +1267,12 @@ p.full__group__name.active {
   }
   .group__name {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .search__block__wrap {
+    max-width: 60rem;
   }
 }
 
@@ -1429,7 +1511,7 @@ p.full__group__name.active {
 
 @media screen and (max-width: 374px) {
   .pages__title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 2.4rem;
     text-align: center;
   }
