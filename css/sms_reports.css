@@ -52,8 +52,8 @@
 
 .wrap#sms_reports .table__row {
   padding: 2.3rem 0;
-  -ms-grid-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr 1.42fr;
-      grid-template-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr 1.42fr;
+  -ms-grid-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr;
+      grid-template-columns: 2.34fr 4.07fr 3.11fr 1.11fr 2.8fr 1.51fr;
 }
 
 .wrap#sms_reports .group__name {
@@ -102,8 +102,8 @@
 
 @media screen and (max-width: 1600px) {
   .wrap#sms_reports .table__row {
-    -ms-grid-columns: 2.34fr 3.57fr 3.61fr 1.11fr 3.5fr 1.21fr 1.02fr;
-        grid-template-columns: 2.34fr 3.57fr 3.61fr 1.11fr 3.5fr 1.21fr 1.02fr;
+    -ms-grid-columns: 2.34fr 3.57fr 3.61fr 1.11fr 3.5fr 1.21fr;
+        grid-template-columns: 2.34fr 3.57fr 3.61fr 1.11fr 3.5fr 1.21fr;
   }
   .wrap#sms_reports .table__col__title {
     font-size: 1.7rem;
