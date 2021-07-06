@@ -1,31 +1,25 @@
-let datapickersArr = [...document.querySelectorAll(".date__input__wrapper")];
-let wkBlock = document.querySelector(".wk__date__block");
-let ffBlock = document.querySelector(".ff__date__block");
+let datepickersArr = [...document.querySelectorAll(".search__form.date")];
+console.log(datepickersArr);
 
-datapickersArr.forEach((elem) => {
+datepickersArr.forEach((elem) => {
   let picker = elem.querySelector(".date__input");
+  let img = elem.querySelector("img");
+  elem.classList.contains("ff__date") ? (elem.style.display = "none") : "";
+  if (navigator.userAgent.indexOf("Firefox") !== -1) {
+    elem.classList.contains("ff__date")
+      ? (elem.style.display = "block")
+      : (elem.style.display = "none");
+  }
   picker.addEventListener("click", (e) => {
     picker.focus();
   });
   picker.addEventListener("focus", () => {
     picker.classList.add("focused");
     picker.classList.add("active");
+    if (navigator.userAgent.indexOf("Firefox") !== -1) {
+      img.style.display = "none";
+      picker.setAttribute("type", "date");
+    }
   });
 });
 
-if (navigator.userAgent.indexOf("Firefox") !== -1) {
-  wkBlock.style.display = "none";
-  ffBlock.style.display = "flex";
-  datapickersArr.forEach((elem) => {
-    let img = elem.querySelector("img");
-    let picker = elem.querySelector(".date__input");
-    picker.addEventListener("click", (e) => {
-      picker.focus();
-    });
-    picker.addEventListener("focus", () => {
-      img.style.display = "none";
-      picker.classList.add("active");
-      picker.setAttribute("type", "date");
-    });
-  });
-}

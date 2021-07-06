@@ -41,9 +41,11 @@
       color: #333333;
     }
   }
-  .date__input__wrapper {
-    img {
-      left: 1rem;
+  .search__form.ff__date {
+    .date__input__wrapper {
+      img {
+        left: 1rem;
+      }
     }
   }
   .date__input::-webkit-datetime-edit-fields-wrapper {
@@ -346,8 +348,7 @@
 .wk__date__block {
   display: flex;
 }
-.ff__date__block {
-  display: none;
+.search__form.ff__date {
   .date__input__wrapper {
     img {
       position: absolute;
@@ -359,9 +360,6 @@
       pointer-events: none;
       z-index: 10;
     }
-  }
-  .date__input::-webkit-clear-button {
-    display: none;
   }
 }
 .serch__checkbox {
@@ -933,7 +931,7 @@ p.full__group__name.active {
     align-items: flex-start;
   }
   .search__block__wrap {
-    max-width: 90rem;
+    max-width: 85rem;
   }
   .search__btn {
     margin-top: 0.5rem;
@@ -971,12 +969,6 @@ p.full__group__name.active {
   }
   .group__name {
     font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .search__block__wrap {
-    max-width: 60rem;
   }
 }
 

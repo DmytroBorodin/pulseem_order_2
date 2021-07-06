@@ -36,7 +36,7 @@
   line-height: 1.8rem;
   color: #333333;
 }
-.wrap.rtl .date__input__wrapper img {
+.wrap.rtl .search__form.ff__date .date__input__wrapper img {
   left: 1rem;
 }
 .wrap.rtl .date__input::-webkit-datetime-edit-fields-wrapper {
@@ -315,10 +315,7 @@
   display: flex;
 }
 
-.ff__date__block {
-  display: none;
-}
-.ff__date__block .date__input__wrapper img {
+.search__form.ff__date .date__input__wrapper img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -327,9 +324,6 @@
   height: 1.4rem;
   pointer-events: none;
   z-index: 10;
-}
-.ff__date__block .date__input::-webkit-clear-button {
-  display: none;
 }
 
 .serch__checkbox {
@@ -927,7 +921,7 @@ p.full__group__name.active {
   }
 
   .search__block__wrap {
-    max-width: 90rem;
+    max-width: 85rem;
   }
 
   .search__btn {
@@ -968,11 +962,6 @@ p.full__group__name.active {
 
   .group__name {
     font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .search__block__wrap {
-    max-width: 60rem;
   }
 }
 @media screen and (max-width: 1200px) {

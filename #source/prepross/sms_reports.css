@@ -58,6 +58,9 @@
 }
 
 @media screen and (max-width: 1800px) {
+  .wrap#sms_reports .search__block__wrap {
+    width: auto;
+  }
   .wrap#sms_reports .value {
     font-size: 1.5rem;
   }
@@ -73,7 +76,15 @@
     font-size: 1.35rem;
   }
 }
+@media screen and (max-width: 1440px) {
+  .wrap#sms_reports .search__block__wrap {
+    width: auto;
+  }
+}
 @media screen and (max-width: 1368px) {
+  .wrap#sms_reports .search__block__wrap {
+    width: auto;
+  }
   .wrap#sms_reports .table__col__title {
     font-size: 1.5rem;
   }
