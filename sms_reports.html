@@ -1107,7 +1107,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1156,7 +1156,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1205,7 +1205,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1254,7 +1254,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1303,7 +1303,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1352,7 +1352,7 @@
                 <div class="row__container">
                   <div class="info__col">
                     <div class="title__block">
-                      <p class="mobile__table__title">לקוחות פעילים</p>
+                      <a href="sms_reports_tabs.html" class="mobile__table__title">לקוחות פעילים</a>
                     </div>
                     <div class="emails">
                       <h3 class="col__title">הקלקות</h3>
@@ -1423,34 +1423,7 @@
         </div>
       </main>
     </div>
-    <script>
-      let cleanBtns = [...document.querySelectorAll(".clean__btn")];
-      let searchBtns = [...document.querySelectorAll(".search__btn")];
-      let datePickers = [...document.querySelectorAll(".date__input__wrapper")];
-      searchBtns.forEach((searchBtn) => {
-        let index = searchBtns.indexOf(searchBtn);
-        searchBtn.addEventListener("click", () => {
-          cleanBtns[index].classList.add("active");
-        });
-
-        cleanBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            datePickers.forEach((elem) => {
-              let picker = elem.querySelector(".date__input");
-              picker.value = "";
-              picker.classList.remove("focused");
-              if (navigator.userAgent.indexOf("Firefox") !== -1) {
-                let img = elem.querySelector("img");
-                if (img) {
-                  img.style.display = "block";
-                }
-                picker.setAttribute("type", "text");
-              }
-            });
-          });
-        });
-      });
-    </script>
+    <script src="js/clear_input.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/tab_switcher_util.js"></script>
     <script src="js/row_switcher_util.js"></script>

@@ -1377,6 +1377,7 @@ p.full__group__name.active {
   }
   .mobile__table__title {
     font-weight: 700;
+    color: #333;
   }
   .mobile__date__block {
     text-align: center;
@@ -1428,10 +1429,10 @@ p.full__group__name.active {
     width: calc(100% - 10.1rem);
   }
   .search__form {
-    display: none;
+    display: none !important;
   }
   .search__form.mobile__true {
-    display: block;
+    display: block !important;
   }
   .buttons__container {
     -webkit-box-orient: vertical;

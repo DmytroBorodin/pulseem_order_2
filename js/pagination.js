@@ -6,7 +6,26 @@ wrappers.forEach((wrapper) => {
   const pageSizeSelector = wrapper.querySelector(".quantity");
   const pageSelector = wrapper.querySelector(".page__num__btn");
 
-  tableRows.shift();
+  if (tableRows.length && mobTableRows.length) {
+    tableRows.shift();
+
+    changePageSize(tableRows, 6);
+    changePageSize(mobTableRows, 6);
+    changePage(tableRows, 6, 1);
+    changePage(mobTableRows, 6, 1);
+
+    pageSizeSelector.addEventListener("change", (e) => {
+      let pageSize = e.target.value;
+      changePageSize(tableRows, pageSize);
+      changePageSize(mobTableRows, pageSize);
+    });
+
+    pageSelector.addEventListener("change", (e) => {
+      let pageSize = pageSizeSelector.value;
+      changePage(tableRows, pageSize, +e.target.value);
+      changePage(mobTableRows, pageSize, +e.target.value);
+    });
+  }
 
   function changePageSize(arr, pageSize) {
     arr.forEach((elem) => {
@@ -20,7 +39,7 @@ wrappers.forEach((wrapper) => {
   }
 
   function changePage(arr, pageSize, currentPage) {
-    let pages = arr.length / pageSize;
+    let pages = Math.ceil(arr.length / pageSize);
     if (currentPage > pages) {
       currentPage = pages;
     }
@@ -35,21 +54,4 @@ wrappers.forEach((wrapper) => {
       }
     });
   }
-
-  changePageSize(tableRows, 6);
-  changePageSize(mobTableRows, 6);
-  changePage(tableRows, 6, 1);
-  changePage(mobTableRows, 6, 1);
-
-  pageSizeSelector.addEventListener("change", (e) => {
-    let pageSize = e.target.value;
-    changePageSize(tableRows, pageSize);
-    changePageSize(mobTableRows, pageSize);
-  });
-
-  pageSelector.addEventListener("change", (e) => {
-    let pageSize = pageSizeSelector.value;
-    changePage(tableRows, pageSize, +e.target.value);
-    changePage(mobTableRows, pageSize, +e.target.value);
-  });
 });

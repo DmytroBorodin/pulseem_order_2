@@ -30,6 +30,9 @@ categoryAxis.renderer.minGridDistance = 20;
 categoryAxis.renderer.grid.template.strokeWidth = 0;
 categoryAxis.renderer.labels.template.fontSize = 18;
 categoryAxis.renderer.labels.template.textAlign = "middle";
+if (window.innerWidth < 525) {
+  categoryAxis.renderer.labels.template.fontSize = 15;
+}
 
 let valueAxis = smsReportsChart.yAxes.push(new am4charts.ValueAxis());
 valueAxis.min = 0;
@@ -46,3 +49,9 @@ series.dataFields.valueY = "yData";
 series.dataFields.categoryX = "xData";
 series.stacked = true;
 series.columns.template.width = am4core.percent(45);
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 525) {
+    categoryAxis.renderer.labels.template.fontSize = 15;
+  }
+});

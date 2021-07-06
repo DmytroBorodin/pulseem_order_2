@@ -343,5 +343,11 @@
   .wrap#sms_reports_tabs #table_content .buttons__block .table__legend {
     display: none;
   }
+  .wrap#sms_reports_tabs #table_content .buttons__block .page__btn.type__4 {
+    display: none;
+  }
+  .wrap#sms_reports_tabs #table_content .buttons__block .vr__border {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sms_reports_tabs.css.map */
