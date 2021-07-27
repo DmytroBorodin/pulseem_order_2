@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>החשבון שלי</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/my_account.css" />
+    <link rel="author" href="humans.txt" />
+  </head>
+  <body>
+    <div class="wrap rtl" id="my_account_tabs">
+      <!-- @import "./sidebar.html" -->
+      <main class="main">
+        <!-- @import "./navbar.html" -->
+        <div class="pages__content__wrap">
+          <h1 class="pages__title">החשבון שלי</h1>
+          <div class="content__wrap__navbar">
+            <div class="tabs__switch__block">
+              <div class="content__tab">
+                <span class="tab__name">פרטי החשבון</span>
+              </div>
+              <div class="content__tab">
+                <span class="tab__name">פרטי חיוב</span>
+              </div>
+              <div class="content__tab">
+                <span class="tab__name">משתמשים והרשאות</span>
+              </div>
+              <div class="content__tab active">
+                <span class="tab__name">שדות נוספים</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__content__wrap">
+            <section class="page__section">
+              <h2 class="section__title">פרטי חברה קבועים</h2>
+              <div class="section__content__block">
+                <form class="section__form mt_">
+                  <div class="input__container">
+                    <label for="שם החברה"> שם החברה </label>
+                    <input type="text" placeholder="לידפיד" />
+                  </div>
+                  <div class="input__container">
+                    <label for="איש קשר"> איש קשר </label>
+                    <input type="text" placeholder="רותם גורן" />
+                  </div>
+                  <div class="input__container">
+                    <label for="טלפון"> טלפון </label>
+                    <input type="text" placeholder="טלפון" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="טלפון נוסף" />
+                  </div>
+                  <div class="input__container">
+                    <label for="אימייל">אימייל </label>
+                    <input type="text" placeholder="אימייל" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="כתובת" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="עיר" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="מיקוד" />
+                  </div>
+                  <div class="input__container search__form date wk__date">
+                    <div class="date__input__wrapper">
+                      <input type="date" placeholder="תאריך לידה" id="from_1" class="date__input" />
+                    </div>
+                  </div>
+                  <div class="input__container search__form date ff__date">
+                    <div class="date__input__wrapper">
+                      <img src="imgs/pages/date_ic.png" alt="" />
+                      <input type="text" placeholder="תאריך לידה" id="from" class="date__input" />
+                    </div>
+                  </div>
+                </form>
+                <button class="section__btn" id="change__pass">שנה סיסמה</button>
+              </div>
+            </section>
+            <hr />
+            <section class="page__section">
+              <h2 class="section__title">פרטי חשבון</h2>
+              <div class="section__content__block">
+                <form class="section__form mt_">
+                  <div class="input__container">
+                    <label for="לידפיד">מאת שם</label>
+                    <input type="text" placeholder="לידפיד" />
+                  </div>
+                  <div class="input__container">
+                    <label for="מאת טלפון">מאת טלפון</label>
+                    <input type="text" placeholder="מאת טלפון" />
+                  </div>
+                  <div class="input__container">
+                    <label for="מאת אימייל">מאת אימייל</label>
+                    <input type="text" placeholder="מאת אימייל" />
+                  </div>
+                </form>
+              </div>
+            </section>
+            <hr />
+            <section class="page__section">
+              <h2 class="section__title">הסרות נמענים</h2>
+              <div class="forms__container">
+                <form action="" class="check__form">
+                  <div class="check__container">
+                    <input type="checkbox" id="rm_email" class="check__input" checked />
+                    <label for="rm_email" class="check__info">
+                      <p class="check__title">Removal Email</p>
+                      <p class="check__subtitle">תוסיפו הסבר כי זה לא ברור</p>
+                    </label>
+                  </div>
+                  <div class="check__container">
+                    <input type="checkbox" id="rm_sms" class="check__input" />
+                    <label for="rm_sms" class="check__info">
+                      <p class="check__title">Removal SMS</p>
+                      <p class="check__subtitle">תוסיפו הסבר כי זה לא ברור</p>
+                    </label>
+                  </div>
+                </form>
+                <form action="" class="select__form">
+                  <div class="custom__select__block">
+                    <p class="custom__select__title">
+                      <span class="custom__title">בחר</span>
+                      <img
+                        src="imgs/pages/select_arrow(1).svg"
+                        alt=""
+                        class="custom__select__arrow"
+                      />
+                    </p>
+                    <div class="custom__options__block">
+                      <p class="custom__option">Option1 Option1 Option1</p>
+                      <p class="custom__option">Option2</p>
+                      <p class="custom__option">Option3</p>
+                    </div>
+                  </div>
+                  <div class="custom__select__block">
+                    <p class="custom__select__title">
+                      <span class="custom__title">בחר</span>
+                      <img
+                        src="imgs/pages/select_arrow(1).svg"
+                        alt=""
+                        class="custom__select__arrow"
+                      />
+                    </p>
+                    <div class="custom__options__block">
+                      <p class="custom__option">Option1 Option1 Option1</p>
+                      <p class="custom__option">Option2</p>
+                      <p class="custom__option">Option3</p>
+                    </div>
+                  </div>
+                </form>
+                <form action="" class="radio__form">
+                  <h3 class="section__title">אפשרויות הסרה</h3>
+                  <div class="radio__container">
+                    <input
+                      type="radio"
+                      name="אפשרויות הסרה"
+                      id="rd_1"
+                      class="radio__input"
+                      checked
+                    />
+                    <label for="rd_1" class="radio__title">הסרה לפי דואר אלקטרוני או סלולרי</label>
+                  </div>
+                  <div class="radio__container">
+                    <input type="radio" name="אפשרויות הסרה" id="rd_2" class="radio__input" />
+                    <label for="rd_2" class="radio__title"> הסרת דואר אלקטרוני ומספר סלולרי </label>
+                  </div>
+                </form>
+                <form action="" class="radio__form">
+                  <h3 class="section__title">קישור הסרה בסמס</h3>
+                  <div class="radio__container">
+                    <input
+                      type="radio"
+                      name="קישור הסרה בסמס"
+                      id="rd_3"
+                      class="radio__input"
+                      checked
+                    />
+                    <label for="rd_3" class="radio__title"> קישור הסרה רגיל</label>
+                  </div>
+                  <div class="radio__container">
+                    <input type="radio" name="קישור הסרה בסמס" id="rd_4" class="radio__input" />
+                    <label for="rd_4" class="radio__title"> קישור הסרה מיידי (ללא אימות)</label>
+                  </div>
+                </form>
+              </div>
+              <div class="section__btn__container">
+                <button class="approve__btn">עדכן פרטים</button>
+              </div>
+            </section>
+          </div>
+          <div class="main__content__wrap">
+            <section class="page__section">
+              <div class="section__content__block">
+                <form class="section__form">
+                  <div class="input__container">
+                    <label for="שם החברה">שם החברה</label>
+                    <input type="text" placeholder="לידפיד" />
+                  </div>
+                  <div class="input__container">
+                    <label for="איש קשר">איש קשר</label>
+                    <input type="text" placeholder="רותם גורן" />
+                  </div>
+                  <div class="input__container">
+                    <label for="טלפון">טלפון</label>
+                    <input type="text" placeholder="טלפון" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="טלפון נוסף" />
+                  </div>
+                  <div class="input__container">
+                    <label for="אימייל">אימייל</label>
+                    <input type="text" placeholder="אימייל" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="כתובת" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="עיר" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="מיקוד" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="ארץ" />
+                  </div>
+                </form>
+                <hr />
+                <form action="" class="section__form mt_">
+                  <div class="input__container">
+                    <label for="שם החברה">שם החברה</label>
+                    <input type="text" placeholder="לידפיד" />
+                  </div>
+                  <div class="input__container">
+                    <label for="איש קשר">איש קשר</label>
+                    <input type="text" placeholder="רותם גורן" />
+                  </div>
+                  <div class="input__container">
+                    <div class="custom__select__block">
+                      <p class="custom__select__title">
+                        <span class="custom__title">בחר</span>
+                        <img
+                          src="imgs/pages/select_arrow(2).svg"
+                          alt=""
+                          class="custom__select__arrow"
+                        />
+                      </p>
+                      <div class="custom__options__block">
+                        <p class="custom__option">Option1 Option1 Option1</p>
+                        <p class="custom__option">Option2</p>
+                        <p class="custom__option">Option3</p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <button class="section__btn" id="change__pass">הוסף כרטיס אשראי</button>
+              </div>
+            </section>
+            <section class="page__section">
+              <div class="section__btn__container">
+                <button class="approve__btn">עדכן פרטים</button>
+              </div>
+            </section>
+          </div>
+          <div class="main__content__wrap" id="table_content">
+            <div class="buttons__block">
+              <div class="buttons__container">
+                <button class="page__btn type__4">הוסף חשבון</button>
+                <span class="vr__border"></span>
+                <div class="serach__form">
+                  <form action="">
+                    <input type="text" placeholder="חפשו מספר" />
+                    <span class="serach__icon">
+                      <img src="imgs/pages/search.svg" alt="" />
+                    </span>
+                  </form>
+                </div>
+              </div>
+              <p class="table__legend">45 שליחות</p>
+            </div>
+            <div class="table__wrap">
+              <div class="table__row__wrapper">
+                <div class="table__header__row table__row">
+                  <h3 class="table__col__title">שם החשבון</h3>
+                  <h3 class="table__col__title">מנהל חשבון</h3>
+                  <h3 class="table__col__title">חבילת דיוור</h3>
+                  <h3 class="table__col__title">SMS קרדיטים</h3>
+                  <h3 class="table__col__title">MMS קרדיטים</h3>
+                  <h3 class="table__col__title">הגבלת הודעות דיוור חודשית</h3>
+                  <h3 class="table__col__title">הגבלת הודעות סמס חודשית</h3>
+                  <h3 class="table__col__title">חבילת דיוור שליחה ישירה</h3>
+                  <h3 class="table__col__title">SMS קרדיטים שליחה ישירה</h3>
+                  <h3 class="table__col__title">MMS קרדיטים שליחה ישירה</h3>
+                </div>
+              </div>
+              <div class="table__row__wrapper">
+                <div class="table__row">
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="col__title">תת חשבון 1</p>
+                      <p class="col__info">תאריך יצירה 13.11.2020 06:24</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">לידפיד</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">2</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block width__100">
+                      <p class="value">18,000</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">2</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">2</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">18,000</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">2</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">18,000</p>
+                    </div>
+                  </div>
+                  <div class="table__col">
+                    <div class="value__block email width__100">
+                      <p class="value">2</p>
+                    </div>
+                  </div>
+                  <div class="table__col reports">
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_10(1).png" alt="" />
+                      <p class="value">התחבר</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_11.png" alt="" />
+                      <p class="value">היסטוריית קרדיטים</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_11(1).png" alt="" />
+                      <p class="value">שליחה ישירה</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_2(1).png" alt="" />
+                      <p class="value">ערוך</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_12.png" alt="" />
+                      <p class="value">מחק</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile__table__wrap">
+              <div class="mobile__table__row">
+                <div class="row__container">
+                  <div class="info__col">
+                    <div class="emails">
+                      <h3 class="col__title">שם החשבון</h3>
+                      <div class="values">
+                        <div class="value__block">
+                          <p class="value">תת חשבון 1</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="emails">
+                      <h3 class="col__title">אימייל</h3>
+                      <div class="values">
+                        <div class="value__block">
+                          <p class="value">לידפיד</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__col">
+                    <div class="mobile__date__block">
+                      <p class="mobile__date">13.11.2020</p>
+                      <p class="mobile__date">06:24</p>
+                      <p class="mobile__date">תאריך יצירה</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="emails">
+                  <div class="values ic">
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_10(1).png" alt="" />
+                      <p class="value">התחבר</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_11.png" alt="" />
+                      <p class="value">היסטוריית קרדיטים</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_11(1).png" alt="" />
+                      <p class="value">שליחה ישירה</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_2(1).png" alt="" />
+                      <p class="value">ערוך</p>
+                    </div>
+                    <div class="value__block width__100px">
+                      <img src="imgs/pages/row_ic_12.png" alt="" />
+                      <p class="value">מחק</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pages__footer">
+              <div class="left__side">
+                <span>מספר שורות:</span>
+                <div class="change__quantity">
+                  <select class="quantity" name="" id="">
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                  </select>
+                  <img src="imgs/pages/arrow.svg" alt="" class="select__quantity__arrow" />
+                </div>
+              </div>
+              <div class="right__side">
+                <span>דף</span>
+                <input type="text" placeholder="1" class="page__num__btn" />
+                <span>מתוך 66</span>
+                <a href="#">
+                  <img src="imgs/pages/page_arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="main__content__wrap active">
+            <section class="page__section">
+              <h2 class="section__title">שדות כלליים לחשבון</h2>
+              <div class="section__content__block">
+                <form class="section__form mt_">
+                  <div class="input__container">
+                    <label for="">שדה כללי 1</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <label for="">שדה כללי 2</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <label for="">שדה כללי 3</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 4" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 5" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 6" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 7" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 8" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 9" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 10" />
+                  </div>
+                </form>
+              </div>
+            </section>
+            <hr />
+            <section class="page__section">
+              <h2 class="section__title">שדות תאריך לחשבון</h2>
+              <div class="section__content__block">
+                <form class="section__form">
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה תאריך 1" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה תאריך 2" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה תאריך 3" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה תאריך 4" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה תאריך 5 " />
+                  </div>
+                </form>
+              </div>
+            </section>
+            <hr />
+            <section class="page__section">
+              <h2 class="section__title">שדות עבור חשבון משנה זה בלבד</h2>
+              <div class="section__content__block">
+                <form class="section__form mt_">
+                  <div class="input__container">
+                    <label for="">שדה כללי 1</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <label for="">שדה כללי 2</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <label for="">שדה כללי 3</label>
+                    <input type="text" placeholder="לורם איפסום" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 4" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 5" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 6" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 7" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 8" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 9" />
+                  </div>
+                  <div class="input__container">
+                    <input type="text" placeholder="שדה כללי 10" />
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const inputs = document.querySelectorAll("input");
+      inputs.forEach((input) => {
+        input.addEventListener("change", (e) => {
+          e.target.value ? input.classList.add("focused") : input.classList.remove("focused");
+        });
+      });
+    </script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/tab_switcher_util.js"></script>
+    <script src="js/custom_select.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
