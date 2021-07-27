@@ -20,6 +20,10 @@
   padding: 0;
 }
 
+.wrap.rtl#my_account_tabs .input__container .date__input__wrapper img {
+  left: 2rem;
+}
+
 .wrap.rtl#my_account_tabs #table_content .buttons__block .vr__border {
   margin: 0 0 0 1.2rem;
 }
@@ -96,6 +100,12 @@
 .wrap#my_account_tabs .input__container .date__input__wrapper {
   width: 89.62%;
   height: 100%;
+}
+
+.wrap#my_account_tabs .input__container .date__input__wrapper img {
+  left: calc(100% - 2rem);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wrap#my_account_tabs .input__container .date__input__wrapper .date__input:after {

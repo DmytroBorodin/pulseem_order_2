@@ -18,6 +18,13 @@
       padding: 0;
     }
   }
+  .input__container {
+    .date__input__wrapper {
+      img {
+        left: 2rem;
+      }
+    }
+  }
   #table_content {
     .buttons__block {
       .vr__border {
@@ -90,6 +97,10 @@
     .date__input__wrapper {
       width: 89.62%;
       height: 100%;
+      img {
+        left: calc(100% - 2rem);
+        transform: translate(-50%, -50%);
+      }
       .date__input:after {
         width: calc(100% - 1rem);
       }
