@@ -24,6 +24,10 @@
   left: 2rem;
 }
 
+.wrap.rtl#my_account_tabs .input__container .date__input__wrapper .date__input[type="date"]::-webkit-calendar-picker-indicator {
+  left: -1.8rem;
+}
+
 .wrap.rtl#my_account_tabs #table_content .buttons__block .vr__border {
   margin: 0 0 0 1.2rem;
 }
@@ -134,6 +138,7 @@
   width: 2.5rem;
   height: 2.8rem;
   opacity: 0.7;
+  left: calc(100% - 6rem);
 }
 
 .wrap#my_account_tabs .input__container .date__input__wrapper input {
