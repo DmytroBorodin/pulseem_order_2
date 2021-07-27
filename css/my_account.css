@@ -205,6 +205,7 @@
 .wrap#my_account_tabs .forms__container .check__input {
   width: 2.2rem;
   height: 2.2rem;
+  margin: 0 3.1rem 0 0;
   border-radius: 0.2rem;
 }
 
