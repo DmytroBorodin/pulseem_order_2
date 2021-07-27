@@ -50,6 +50,7 @@
 }
 .wrap#my_account_tabs .input__container.search__form {
   margin: 0 0 2.5rem 0;
+  display: block;
 }
 .wrap#my_account_tabs .input__container.search__form.ff__date .date__input__wrapper img {
   width: 2.5rem;
@@ -373,6 +374,9 @@
   .wrap#my_account_tabs .forms__container .radio__form {
     margin-top: 8rem;
   }
+  .wrap#my_account_tabs .forms__container form:nth-of-type(3) {
+    margin: 8rem 0 0 0;
+  }
 }
 @media screen and (max-width: 992px) {
   .wrap.rtl#my_account_tabs .content__tab {
@@ -431,6 +435,7 @@
 @media screen and (max-width: 520px) {
   .wrap.rtl#my_account_tabs .content__tab {
     margin: 0 0 1.5rem 0;
+    padding: 0;
   }
 
   .wrap#my_account_tabs .tabs__switch__block {
@@ -441,12 +446,14 @@
   .wrap#my_account_tabs .content__tab {
     width: 100%;
     margin: 0 0 1.5rem 0;
+    padding: 0;
   }
   .wrap#my_account_tabs .content__tab:last-child {
     margin: 0;
   }
   .wrap#my_account_tabs .content__tab .tab__name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    padding: 0 0 0.4rem;
   }
   .wrap#my_account_tabs .section__btn__container .approve__btn {
     width: 20rem;
