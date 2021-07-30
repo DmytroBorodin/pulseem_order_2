@@ -139,6 +139,10 @@
   margin: 0 0 0 0.8rem;
 }
 
+.wrap.rtl .option__container .content__tab {
+  margin: 0;
+}
+
 @media screen and (max-width: 1100px) {
   .wrap.rtl .mobile__table__row {
     padding: 3.14% 5.14% 5.43% 4.28%;
@@ -228,14 +232,16 @@
   display: flex;
 }
 
-.content__tab {
+.content__tab,
+.content__tab.custom__option {
   margin-right: 8rem;
   margin-left: 0rem;
   padding: 0 0.4rem;
   cursor: pointer;
 }
 
-.content__tab.active .tab__name:after {
+.content__tab.active .tab__name:after,
+.content__tab.custom__option.active .tab__name:after {
   background-color: #0371ad;
 }
 
@@ -1172,6 +1178,14 @@ p.full__group__name.active {
 
 .custom__option:hover {
   background-color: #f1f1f1;
+}
+
+.option__container {
+  padding: 0.75rem;
+}
+
+.option__container .content__tab {
+  margin: 0;
 }
 
 @media screen and (min-width: 2300px) {

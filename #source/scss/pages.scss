@@ -116,6 +116,11 @@
       margin: 0 0 0 0.8rem;
     }
   }
+  .option__container {
+    .content__tab {
+      margin: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -211,7 +216,8 @@
 .tabs__switch__block {
   display: flex;
 }
-.content__tab {
+.content__tab,
+.content__tab.custom__option {
   margin-right: 8rem;
   margin-left: 0rem;
   padding: 0 0.4rem;
@@ -893,6 +899,12 @@ p.full__group__name.active {
   }
   &:hover {
     background-color: #f1f1f1;
+  }
+}
+.option__container {
+  padding: 0.75rem;
+  .content__tab {
+    margin: 0;
   }
 }
 
