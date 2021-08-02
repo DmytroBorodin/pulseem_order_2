@@ -24,7 +24,7 @@
         left: 2rem;
       }
       .date__input[type="date"]::-webkit-calendar-picker-indicator {
-        left: -1.8rem;
+        left: 0.5rem;
       }
     }
   }
@@ -102,6 +102,7 @@
       color: #7f7f7f;
       transition: all 0.4s ease;
       opacity: 0;
+      line-height: 1.5;
       &.focused {
         opacity: 1;
       }
@@ -139,7 +140,8 @@
         width: 2.5rem;
         height: 2.8rem;
         opacity: 0.7;
-        left: calc(100% - 6rem);
+        left: calc(100% - 3.6rem);
+        margin: 0;
       }
       input {
         width: 100%;
@@ -294,6 +296,7 @@
       color: #7f7f7f;
       transition: all 0.4s ease;
       opacity: 0;
+      line-height: 1.5;
       &.focused {
         opacity: 1;
       }
@@ -391,6 +394,7 @@
       padding: 0 0.3rem;
     }
     .table__col.reports {
+      align-items: flex-start;
       padding: 0 2rem 0 1rem;
       .value {
         max-width: 8rem;
@@ -495,6 +499,18 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .wrap#my_account_tabs {
+    .mobile__table__row {
+      .emails.table {
+        .value__block {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .wrap.rtl#my_account_tabs {
     .content__tab {
@@ -511,26 +527,22 @@
 @media screen and (max-width: 740px) {
   .wrap.rtl#my_account_tabs {
     .mobile__table__row {
-      .info__col {
-        .emails.table {
-          .value__block {
-            margin: 1rem 0 1rem 1rem;
-          }
+      .emails.table {
+        .value__block {
+          margin: 1rem 0 1rem 1rem;
         }
       }
     }
   }
   .wrap#my_account_tabs {
     .mobile__table__row {
-      .info__col {
-        .emails.table {
-          display: flex;
-          max-width: 35rem;
-          .value__block {
-            margin: 1rem 1rem 1rem 0;
-            width: 50%;
-            max-width: 13rem;
-          }
+      .emails.table {
+        display: flex;
+        max-width: 30rem;
+        .value__block {
+          margin: 1rem 1rem 1rem 0;
+          width: 50%;
+          max-width: 13rem;
         }
       }
     }
@@ -605,14 +617,12 @@
           font-size: 1.4rem;
         }
       }
-      .info__col {
-        .emails.table {
-          .col__title {
-            font-size: 1.6rem;
-          }
-          .value {
-            font-size: 1.4rem;
-          }
+      .emails.table {
+        .col__title {
+          font-size: 1.6rem;
+        }
+        .value {
+          font-size: 1.4rem;
         }
       }
     }
@@ -674,14 +684,12 @@
   .wrap#my_account_tabs {
     .mobile__table__row {
       padding: 2%;
-      .info__col {
-        .emails.table {
-          .col__title {
-            font-size: 1.4rem;
-          }
-          .value__block {
-            max-width: 10rem;
-          }
+      .emails.table {
+        .col__title {
+          font-size: 1.4rem;
+        }
+        .value__block {
+          max-width: 10rem;
         }
       }
     }
@@ -723,12 +731,10 @@
 @media screen and (max-width: 374px) {
   .wrap#my_account_tabs {
     .mobile__table__row {
-      .info__col {
-        .emails.table {
-          .value__block {
-            width: 100%;
-            max-width: 10rem;
-          }
+      .emails.table {
+        .value__block {
+          width: 100%;
+          max-width: 10rem;
         }
       }
     }

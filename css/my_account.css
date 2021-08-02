@@ -25,7 +25,7 @@
 }
 
 .wrap.rtl#my_account_tabs .input__container .date__input__wrapper .date__input[type="date"]::-webkit-calendar-picker-indicator {
-  left: -1.8rem;
+  left: 0.5rem;
 }
 
 .wrap.rtl#my_account_tabs #table_content .table__col.reports {
@@ -105,6 +105,7 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   opacity: 0;
+  line-height: 1.5;
 }
 
 .wrap#my_account_tabs .input__container label.focused {
@@ -163,7 +164,8 @@
   width: 2.5rem;
   height: 2.8rem;
   opacity: 0.7;
-  left: calc(100% - 6rem);
+  left: calc(100% - 3.6rem);
+  margin: 0;
 }
 
 .wrap#my_account_tabs .input__container .date__input__wrapper input {
@@ -370,6 +372,7 @@
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   opacity: 0;
+  line-height: 1.5;
 }
 
 .wrap#my_account_tabs .custom__select__block label.focused {
@@ -495,6 +498,9 @@
 }
 
 .wrap#my_account_tabs #table_content .table__col.reports {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0 2rem 0 1rem;
 }
 
@@ -587,6 +593,14 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .value__block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .wrap.rtl#my_account_tabs .content__tab {
     margin: 0 0 0 2rem;
@@ -597,16 +611,16 @@
 }
 
 @media screen and (max-width: 740px) {
-  .wrap.rtl#my_account_tabs .mobile__table__row .info__col .emails.table .value__block {
+  .wrap.rtl#my_account_tabs .mobile__table__row .emails.table .value__block {
     margin: 1rem 0 1rem 1rem;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table {
+  .wrap#my_account_tabs .mobile__table__row .emails.table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 35rem;
+    max-width: 30rem;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .value__block {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .value__block {
     margin: 1rem 1rem 1rem 0;
     width: 50%;
     max-width: 13rem;
@@ -671,10 +685,10 @@
   .wrap#my_account_tabs .mobile__table__row .values.ic .value {
     font-size: 1.4rem;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .col__title {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .col__title {
     font-size: 1.6rem;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .value {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .value {
     font-size: 1.4rem;
   }
 }
@@ -725,10 +739,10 @@
   .wrap#my_account_tabs .mobile__table__row {
     padding: 2%;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .col__title {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .col__title {
     font-size: 1.4rem;
   }
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .value__block {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .value__block {
     max-width: 10rem;
   }
 }
@@ -754,7 +768,7 @@
 }
 
 @media screen and (max-width: 374px) {
-  .wrap#my_account_tabs .mobile__table__row .info__col .emails.table .value__block {
+  .wrap#my_account_tabs .mobile__table__row .emails.table .value__block {
     width: 100%;
     max-width: 10rem;
   }
