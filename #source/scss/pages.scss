@@ -337,6 +337,8 @@
 .date__input::after {
   position: absolute;
   content: attr(placeholder);
+  top: 50%;
+  transform: translateY(-50%);
   width: calc(100% - 2.3rem);
 }
 .date__input.focused {
